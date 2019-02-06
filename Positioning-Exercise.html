@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<title>Positioning Exercise</title>
+	<style type="text/css">
+		
+
+
+		.square-1-red{
+			width: 400px;
+			height: 400px;
+			background-color: red;
+			margin:10px;
+			margin-bottom: 200px;
+			position: relative;
+		}
+
+		.square-1-green{
+			position: relative;
+			width: 200px;
+			height:200px;
+			background-color: green;
+			margin-left: 50%;
+		}
+
+		.square-2-blue{
+			width: 400px;
+			height: 400px;
+			background-color: blue;
+			margin:10px;
+			margin-bottom: 200px;
+			position: relative;
+		}
+
+		.square-2-pink{
+			position: absolute;
+			width: 200px;
+			height:200px;
+			background-color: pink;
+			margin-top: 50%;
+		}
+
+		.square-2-rectangle{
+			position: absolute;
+			width: 200px;
+			height:100px;
+			background-color: pink;
+			margin-left: 50%;
+
+		}
+
+		.square-3-red{
+			width: 400px;
+			height: 400px;
+			background-color: red;
+			margin:10px;
+			margin-bottom: 200px;
+			position: relative;
+
+		}
+
+		.square-3-purple{
+			position: absolute;
+			width: 200px;
+			height:200px;
+			background-color: purple;
+			display: block;
+			margin: 25%;
+
+		}
+
+		.square-4-green{
+			width: 400px;
+			height: 400px;
+			background-color: green;
+			margin:10px;
+			margin-bottom: 200px;
+			position: relative;
+		}
+
+		.square-4-yellow{
+			position: absolute;
+			width: 200px;
+			height:200px;
+			background-color: yellow;
+			margin-left: 50%;
+		}
+
+		.square-4-red{
+			position: absolute;
+			width: 200px;
+			height:200px;
+			background-color: red;
+			margin-top: 50%;
+		}
+
+		.square-4-blue{
+			position: absolute;
+			width: 200px;
+			height:200px;
+			background-color: blue;
+			margin-top: 50%;
+			margin-left: 50%;
+		}
+
+		.square-5-blue{
+			width: 400px;
+			height: 400px;
+			background-color: blue;
+			margin:10px;
+			margin-bottom: 200px;
+			position: relative;
+		}
+
+		.square-5-orangerec{
+			position: absolute;
+			width: 200px;
+			height:100px;
+			background-color: orange;
+			margin-left: 0%;
+		}
+
+		.square-5-purpleleft{
+			position: absolute;
+			width: 200px;
+			height:100px;
+			background-color: purple;
+			margin-left: 50%;
+		}
+
+		.square-5-purplecenter{
+			position: absolute;
+			width: 200px;
+			height:100px;
+			background-color: purple;
+			display: block;
+			margin: 25%;
+			margin-top: 50%;
+		}
+
+		.large_square{
+			width: 400px;
+			height: 400px;
+			background-color: red;
+			margin:10px;
+			margin-bottom: 200px;
+		}
+
+
+		.small_square, .middle_square{
+			display: inline-block;
+		}
+
+		.small_square{
+			width: 25%;
+			height:25%;
+			background-color: yellow;
+			margin-top: 50%;
+
+		}
+
+		.middle_square{
+			width: 50%;
+			height: 50%;
+			background-color: green;
+
+
+		}
+
+		.square-7-red{
+			width: 400px;
+			height: 400px;
+			background-color: red;
+			margin:10px;
+			margin-bottom: 200px;
+			position: relative;
+		}
+
+		.square-7-blueleft{
+			position: absolute;
+			width: 100px;
+			height:200px;
+			background-color: blue;
+			margin-left: 50%;
+		}
+
+		.square-7-purpleleft{
+			position: absolute;
+			width: 100px;
+			height:200px;
+			background-color: purple;
+			margin-left: 75%;
+		}
+
+		.square-7-bluebottom{
+			position: absolute;
+			width: 200px;
+			height:100px;
+			background-color: blue;
+			margin-top: 50%;
+		}
+
+		.square-7-purplebottom{
+			position: absolute;
+			width: 200px;
+			height:100px;
+			background-color: purple;
+			margin-top: 75%;
+		}
+
+		.square-7-green{
+			height: 200px;
+			width: 200px;
+			background-color: green;
+			border-radius: 50%;
+			position: absolute;
+			margin: 25%;
+			overflow: hidden;
+
+		}
+
+		.square-7-purple{
+			height: 100px;
+			width: 100px;
+			background-color: purple;
+			position: absolute;
+			margin: 50%;
+			width: 100px;
+ 			border-radius: 0 0 100px 0;
+
+}
+
+
+		.square-8-red{
+			width: 400px;
+			height: 400px;
+			background-color: red;
+			margin:10px;
+			margin-bottom: 200px;
+			position: relative;
+
+		}
+
+		.square-8-blue{
+			position: absolute;
+			width: 200px;
+			height:200px;
+			background-color: blue;
+			margin-left: 50%;
+		}
+
+		.square-8-green{
+			position: absolute;
+			width: 100px;
+			height:400px;
+			background-color: green;
+			margin-left: 25%;
+		}
+
+		.square-9-pink{
+			width: 400px;
+			height: 400px;
+			background-color: pink;
+			margin:10px;
+			margin-bottom: 200px;
+			position: relative;
+		}
+
+		.square-9-blue{
+			position: absolute;
+			width: 200px;
+			height:400px;
+			background-color: blue;
+			margin-left: 50%;
+
+		}
+
+		.square-yellow1{
+			position: absolute;
+			width: 100px;
+			height:100px;
+			background-color: yellow;
+			margin-left: 50%;
+		}
+
+		.square-yellow2{
+			position: absolute;
+			width: 100px;
+			height:100px;
+			background-color: yellow;
+			margin-left: 25%;
+			margin-top: 25%;
+		}
+
+		.square-yellow3{
+			position: absolute;
+			width: 100px;
+			height:100px;
+			background-color: yellow;
+			margin-left: 50%;
+			margin-top: 50%;
+		}
+
+		.square-yellow4{
+			position: absolute;
+			width: 100px;
+			height:100px;
+			background-color: yellow;
+			margin-left: 25%;
+			margin-top: 75%;
+		}
+
+		.square-10-pink{
+			width: 400px;
+			height: 400px;
+			background-color: pink;
+			margin:10px;
+			margin-bottom: 200px;
+			position: relative;
+		}
+
+		.big-circle{
+			height: 400px;
+			width: 400px;
+			background-color: black;
+			border-radius: 50%;
+			position: absolute;
+			margin: 0%;
+		}
+
+		.square-10-pink2{
+			width: 280px;
+			height: 280px;
+			background-color: pink;
+			position: absolute;
+			margin: 60px;
+		}
+
+		.small-circle{
+			height: 280px;
+			width: 280px;
+			background-color: black;
+			border-radius: 50%;
+			position: absolute;
+			margin: 60px;
+		}
+
+	</style>
+
+
+</head>
+<body>
+	
+	<h1>Square 1</h1>
+	<div class="square-1-red">
+		<div class="square-1-green"></div>
+	</div>
+
+	<h1>Square 2</h1>
+	<div class="square-2-blue">
+		<div class="square-2-pink"></div>
+		<div class="square-2-rectangle"></div>
+	</div>
+
+	<h1>Square 3</h1>
+	<div class="square-3-red">
+		<div class="square-3-purple"></div>
+	</div>
+
+	<h1>Square 4</h1>
+	<div class="square-4-green">
+		<div class="square-4-yellow"></div>
+		<div class="square-4-red"></div>
+		<div class="square-4-blue"></div>
+
+	</div>
+
+	<h1>Square 5</h1>
+	<div class="square-5-blue">
+		<div class="square-5-orangerec"></div>
+		<div class="square-5-purpleleft"></div>
+		<div class="square-5-purplecenter"></div>
+
+	</div>
+
+	<h1>Square 6</h1>
+	<div class="large_square">
+        <div class="small_square"></div
+        	><div class="middle_square"></div
+        	><div class="small_square"></div>
+    </div>
+
+	<h1>Square 7</h1>
+	<div class="square-7-red">
+		<div class="square-7-blueleft"></div>
+		<div class="square-7-purpleleft"></div>
+		<div class="square-7-bluebottom"></div>
+		<div class="square-7-purplebottom"></div>
+		<div class="square-7-green"></div>
+		<div class="square-7-purple"></div>
+	</div>
+
+	<h1>Square 8</h1>
+	<div class="square-8-red">
+		<div class="square-8-blue"></div>
+		<div class="square-8-green"></div>
+	</div>
+
+	<h1>Square 9</h1>
+	<div class="square-9-pink">
+		<div class="square-9-blue"></div>
+		<div class="square-yellow1"></div>
+		<div class="square-yellow2"></div>
+		<div class="square-yellow3"></div>
+		<div class="square-yellow4"></div>
+	</div>
+
+	<h1>Square 10</h1>
+	<div class="square-10-pink">
+		<div class="big-circle"></div>
+		<div class="square-10-pink2"></div>
+		<div class="small-circle"></div>
+	</div>
+
+
+</body>
+</html>
